@@ -20,28 +20,28 @@ const ServicesSection = () => {
           <Card>
             <div className="icon">
               <img src={clock} alt="clock icon" />
-              <h3>Efficient</h3>
+              <h4>Efficient</h4>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={teamwork} alt="teamwork icon" />
-              <h3>Teamwork</h3>
+              <h4>Teamwork</h4>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={diaphragm} alt="diaphragm icon" />
-              <h3>Diaphragm</h3>
+              <h4>Diaphragm</h4>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={money} alt="money icon" />
-              <h3>Affordable</h3>
+              <h4>Affordable</h4>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
@@ -78,16 +78,16 @@ const Card = styled.div`
     display: flex;
     align-items: center;
 
-    h3 {
+    h4 {
       margin-left: 1rem;
       background: white;
       color: black;
-      padding: .4rem;
+      padding: 0.4rem;
       border-radius: 1rem;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
   }
-`
+`;
 
 export default ServicesSection;

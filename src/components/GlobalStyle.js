@@ -33,15 +33,18 @@ const GlobalStyle = createGlobalStyle`
     h2 {
         font-weight: lighter;
         font-size: 3rem;
+        
     }
 
     h3 {
         color: white;
-        font-size: 1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
     }
 
     h4 {
-        font-weight: bold;
+        font-weight: 400;
+        font-size: 1rem;
     }
 
     span {
