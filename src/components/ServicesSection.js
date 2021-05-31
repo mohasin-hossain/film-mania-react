@@ -48,7 +48,7 @@ const ServicesSection = () => {
         </Cards>
       </Description>
       <Image>
-        <img src={home2} alt="Home Image" />
+        <img src={home2} alt="Home" />
       </Image>
     </Services>
   );
