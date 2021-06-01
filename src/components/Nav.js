@@ -34,6 +34,7 @@ const StyledNav = styled.nav`
   a {
     color: white;
     text-decoration: none;
+    font-size: 1rem;
   }
 
   ul {

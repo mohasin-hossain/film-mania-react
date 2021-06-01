@@ -4,11 +4,21 @@ import styled from "styled-components";
 import athlete from "../img/athlete-small.png";
 import theracer from "../img/theracer-small22.png";
 import goodtimes from "../img/goodtimes-small22.png";
+// Router
 import { Link } from "react-router-dom";
+// Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animate";
 
 const OurWork = () => {
   return (
-    <Work>
+    <Work
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+      style={{ background: "#fff"}}
+    >
       <Movie>
         <h2>The Athlete</h2>
         <div className="line"></div>
@@ -34,7 +44,7 @@ const OurWork = () => {
   );
 };
 
-const Work = styled.div`
+const Work = styled(motion.div)`
   min-height: 100vh;
   padding: 1rem 5rem;
   overflow: hidden;
