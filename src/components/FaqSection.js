@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { About } from "../styles";
 import Toggle from "./Toggle";
+import { AnimateSharedLayout } from "framer-motion";
 
 const FaqSection = () => {
   return (
@@ -9,48 +10,42 @@ const FaqSection = () => {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <Toggle>
-        <div className="question">
-          <h3>How Do I Start?</h3>
+      <AnimateSharedLayout>
+        <Toggle title="How Do I Start?">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, vel.
             </p>
-            <div className="faq-line"></div>
           </div>
-        </div>
-      </Toggle>
-      <div className="question">
-        <h3>Daily Schedule</h3>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, vel.
-          </p>
-          <div className="faq-line"></div>
-        </div>
-      </div>
-      <div className="question">
-        <h3>Different Payment Methods</h3>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, vel.
-          </p>
-          <div className="faq-line"></div>
-        </div>
-      </div>
-      <div className="question">
-        <h3>What products do you offer?</h3>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, vel.
-          </p>
-          <div className="faq-line"></div>
-        </div>
-      </div>
+        </Toggle>
+        <Toggle title="Daily Schedule">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aspernatur unde, itaque eum eos eaque quasi?
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Different Payment Methods">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              aliquid cupiditate minima?
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="What products do you offer?">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit elica.
+            </p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 };
@@ -69,17 +64,17 @@ const Faq = styled(About)`
   .faq-line {
     background: #cccccc;
     height: 0.2rem;
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
     width: 100%;
   }
 
   .question {
-    padding: 3rem 0;
+    padding: 1rem 0;
     cursor: pointer;
   }
 
   .answer {
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
 
     p {
       padding: 1rem 0rem;
