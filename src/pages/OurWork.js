@@ -17,6 +17,8 @@ import {
   sliderContainer,
 } from "../animate";
 import { useScroll } from "../components/useScroll";
+// ScrollTo Top
+import ScrollTop from "../components/ScrollTop";
 
 const OurWork = () => {
   const [element, controls] = useScroll();
@@ -64,6 +66,7 @@ const OurWork = () => {
           <img src={goodtimes} alt="Good Times" />
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };
