@@ -14,6 +14,12 @@ const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
     }
 
+    html {
+        @media only screen and (max-width: 1150px) {
+            font-size: 70%;
+        }
+    }
+
     button {
         cursor: pointer;
         font-size: .8rem;

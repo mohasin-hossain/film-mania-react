@@ -6,7 +6,9 @@ const Nav = () => {
   return (
     <StyledNav>
       <h1>
-        <Link to="/" id="logo">FilmMania</Link>
+        <Link to="/" id="logo">
+          FilmMania
+        </Link>
       </h1>
       <ul>
         <li>
@@ -24,7 +26,7 @@ const Nav = () => {
 };
 
 const StyledNav = styled.nav`
-  height: 10vh;
+  min-height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,6 +56,33 @@ const StyledNav = styled.nav`
   li {
     padding-left: 5rem;
     position: relative;
+  }
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+
+    #logo {
+      font-size: 2.5rem;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding: 2rem;
+      justify-content: space-around;
+      width: 100%;
+      background-color: #353535;
+
+      li {
+        padding: 0;
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
   }
 `;
 

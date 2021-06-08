@@ -79,6 +79,10 @@ const Work = styled(motion.div)`
     padding: 1rem 0rem;
     font-size: 2.2rem;
   }
+
+  @media only screen and (max-width: 800px) {
+    padding: 2rem 3rem;
+  }
 `;
 
 const Movie = styled(motion.div)`

@@ -60,6 +60,7 @@ const FaqSection = () => {
 
 const Faq = styled(About)`
   display: block;
+  text-align: left;
 
   span {
     display: block;
